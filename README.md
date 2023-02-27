@@ -3,6 +3,12 @@ Calculator for bread units that could help people with diabetes to calculate the
 
 ---
 
+### Preview:
+
+![Preview](https://i.imgur.com/LXL422m.png)
+
+---
+
 ## Disclaimer !
 
 This project is not intended and **SHOULD NOT** to be used as a medical device. It is only a tool to help people with diabetes to calculate the amount of carbohydrates in their food.** Make sure to double check** the values your are entering & getting from this tool.
@@ -16,6 +22,17 @@ This project is not intended and **SHOULD NOT** to be used as a medical device. 
 - [styled-components](https://styled-components.com/)
 - [react-router](https://reactrouter.com/)
 - [coolors.co](https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-a4adb6-6c757d-4a5159-2e3338-121517) - color pallete.
+
+---
+
+### Todo:
+
+- [x] ~~Add a calculator for carbohydrates~~
+- [ ] Add a calculator for bread units
+- [ ] Add a calculator for bread units from carbohydrates
+- [ ] Localization (English & Bulgarian)
+- [ ] Add a dark theme
+- [ ] Responsive design
 
 ---
 
