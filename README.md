@@ -6,7 +6,7 @@ Calculator for bread units that could help people with diabetes to calculate the
 ### Preview:
 
 ![Homepage](https://i.imgur.com/ZZftJ83.png)
-![Calculator](https://i.imgur.com/LXL422m.png)
+![Calculator](https://i.imgur.com/xxZysAw.png)
 ![Calculator2](https://i.imgur.com/qmd4vDP.png)
 ---
 
