@@ -5,8 +5,9 @@ Calculator for bread units that could help people with diabetes to calculate the
 
 ### Preview:
 
-![Preview](https://i.imgur.com/LXL422m.png)
-
+![Homepage](https://i.imgur.com/ZZftJ83.png)
+![Calculator](https://i.imgur.com/xxZysAw.png)
+![Calculator2](https://i.imgur.com/qmd4vDP.png)
 ---
 
 ## Disclaimer !
@@ -21,6 +22,7 @@ This project is not intended and **SHOULD NOT** to be used as a medical device. 
 - [TypeScript](https://www.typescriptlang.org/)
 - [styled-components](https://styled-components.com/)
 - [react-router](https://reactrouter.com/)
+- [framer-motion](https://www.framer.com/motion/)
 - [coolors.co](https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-a4adb6-6c757d-4a5159-2e3338-121517) - color pallete.
 
 ---
