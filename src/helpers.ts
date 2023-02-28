@@ -19,7 +19,7 @@ export function calculateCarbsPerGrams(
         return 0;
     }
 
-    const result = (carbsPerHundred / 100) * grams;
+    const result = (100 / carbsPerHundred) * grams;
 
     return result % 1 !== 0 ? result.toFixed(2) : result;
 }
