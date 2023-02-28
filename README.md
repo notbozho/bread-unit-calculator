@@ -34,6 +34,8 @@ This project is not intended and **SHOULD NOT** to be used as a medical device. 
 - [x] ~~Add a calculator for bread units~~
 - [x] ~~Add a calculator for bread units from carbohydrates~~
 - [x] ~~Routing~~
+- [ ] Add a disclaimer that this shouldn't be trusted for medical purposes
+- [ ] Add a footer
 - [ ] Go back button in calculators
 - [ ] Localization (English & Bulgarian)
 - [ ] Make calculator component 1 instead of 3 and more flexible 
