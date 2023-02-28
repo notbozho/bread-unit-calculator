@@ -22,6 +22,7 @@ This project is not intended and **SHOULD NOT** to be used as a medical device. 
 - [TypeScript](https://www.typescriptlang.org/)
 - [styled-components](https://styled-components.com/)
 - [react-router](https://reactrouter.com/)
+- [framer-motion](https://www.framer.com/motion/)
 - [coolors.co](https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-a4adb6-6c757d-4a5159-2e3338-121517) - color pallete.
 
 ---
