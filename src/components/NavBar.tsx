@@ -58,7 +58,7 @@ export default function Header() {
             <HeaderContainer>
                 <Logo src={logo} alt="Logo" />
                 <SiteName>ХЕ Калкулатор</SiteName>
-                <Link><a href="https://www.github.com/notbozho/bread-unit-calculator">GitHub</a></Link>
+                <Link><a href="https://www.github.com/notbozho/bread-unit-calculator" target="_blank" rel="noreferrer">GitHub</a></Link>
             </HeaderContainer>
         </div>
     );

@@ -28,10 +28,13 @@ This project is not intended and **SHOULD NOT** to be used as a medical device. 
 ### Todo:
 
 - [x] ~~Add a calculator for carbohydrates~~
-- [ ] Add a calculator for bread units
-- [ ] Add a calculator for bread units from carbohydrates
+- [x] ~~Homepage~~
+- [x] ~~Add a calculator for bread units~~
+- [x] ~~Add a calculator for bread units from carbohydrates~~
+- [x] ~~Routing~~
+- [ ] Go back button in calculators
 - [ ] Localization (English & Bulgarian)
-- [ ] Add a dark theme
+- [ ] Make calculator component 1 instead of 3 and more flexible 
 - [ ] Responsive design
 
 ---
