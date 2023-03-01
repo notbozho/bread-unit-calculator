@@ -1,4 +1,4 @@
-# Bread Unit Calculator
+# Bread Unit Calculator [![wakatime](https://wakatime.com/badge/user/d7b1cfc2-9b38-407f-ae0e-34a88f03ff8e/project/1fca0f1c-9dda-4d57-9159-6ad395129d4b.svg?style=for-the-badge)](https://wakatime.com/badge/user/d7b1cfc2-9b38-407f-ae0e-34a88f03ff8e/project/1fca0f1c-9dda-4d57-9159-6ad395129d4b?style=for-the-badge)
 Calculator for bread units that could help people with diabetes to calculate the amount of carbohydrates in their food.
 
 _If you find any bugs or have any suggestions, please open an issue._
@@ -27,12 +27,6 @@ This project is not intended and **SHOULD NOT** to be used as a medical device. 
 - [react-router](https://reactrouter.com/)
 - [framer-motion](https://www.framer.com/motion/)
 - [coolors.co](https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-a4adb6-6c757d-4a5159-2e3338-121517) - color pallete.
-
----
-
-###  Time
-
-I use WakaTime to track time on code projects. According to the report I spent 27 hrs 3 mins on this project.
 
 ---
 
