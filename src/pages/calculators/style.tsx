@@ -79,11 +79,11 @@ export const ResultContainer = styled.div`
     @media screen {
         @media (max-width: 768px) {
             h1 {
-                font-size: 6vmax;
+                font-size: 5.7vmax;
             }
 
             p {
-                font-size: 2.2vmax;
+                font-size: 2.1vmax;
             }
         }
     }
