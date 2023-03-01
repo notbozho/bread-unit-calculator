@@ -1,4 +1,4 @@
-# Bread Unit Calculator
+# Bread Unit Calculator [![wakatime](https://wakatime.com/badge/user/d7b1cfc2-9b38-407f-ae0e-34a88f03ff8e/project/1fca0f1c-9dda-4d57-9159-6ad395129d4b.svg?style=for-the-badge)](https://wakatime.com/badge/user/d7b1cfc2-9b38-407f-ae0e-34a88f03ff8e/project/1fca0f1c-9dda-4d57-9159-6ad395129d4b?style=for-the-badge)
 Calculator for bread units that could help people with diabetes to calculate the amount of carbohydrates in their food.
 
 _If you find any bugs or have any suggestions, please open an issue._
