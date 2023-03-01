@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 // import logo.png from assets
-const logo = require("./logo.png");
+const logo = require("../assets/logo.png");
 
 const HeaderContainer = styled.div`
     position: fixed;

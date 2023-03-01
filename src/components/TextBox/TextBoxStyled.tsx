@@ -40,7 +40,7 @@ const TextBoxStyled = styled.input`
 
         @media (max-width: 768px) {
             width: 70%;
-            height: 70px;
+            height: 60px;
         }
     }
 `;

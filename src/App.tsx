@@ -6,6 +6,7 @@ import Homepage from "./pages/Homepage";
 import GramsByCarbs from "./pages/calculators/GramsByCarbs";
 import CarbsAndBUByGrams from "./pages/calculators/CarbsAndBUByGrams";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import Footer from "./components/Footer";
 
 const router = createBrowserRouter([
     {
@@ -41,6 +42,7 @@ function NavbarWrapper() {
         <div className="App">
             <NavBar />
             <Outlet />
+            <Footer />
         </div>
     );
 }
