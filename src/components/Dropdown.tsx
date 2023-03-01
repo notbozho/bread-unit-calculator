@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface IDropdownItemProps {
     item: string;
@@ -122,6 +123,8 @@ const DropdownItem = styled.div`
 `;
 
 const Dropdown: React.FC<IDropdownProps> = ({ items }) => {
+    const { t } = useTranslation();
+
     const [isOpen, setIsOpen] = useState(false);
     const [selectedItem, setSelectedItem] = useState("");
 
@@ -139,7 +142,7 @@ const Dropdown: React.FC<IDropdownProps> = ({ items }) => {
     return (
         <DropdownContainer>
             <DropdownHeader isOpen={isOpen} onClick={handleToggle}>
-                {selectedItem || "Избери Калкулатор"}{" "}
+                {selectedItem || t('selectCalculator')}{" "}
                 <DropdownArrow isOpen={isOpen} />
             </DropdownHeader>
 

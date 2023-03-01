@@ -1,0 +1,25 @@
+{
+    "title": "Bread Unit Calculator",
+    "shortTitle": "BU Calculator",
+    "warning": "Warning",
+    "warningText": "Keep in mind that this calculator is not intended to be used for any medical purposes.",
+    "warningSecondText": "Please check values that you enter in the calculator to make sure they are correct.",
+    "selectCalculator": "Select Calculator",
+    "dropdownItem1": "How many grams of the product you need, according to how many bread units you want.",
+    "dropdownItem2": "How many bread units and carbohydrates are equal to a weight of the product.",
+    "dropdownItem3": "How many grams of the product you need according to how many carbohydrates you want.",
+    "footer": "Made with 💖 by",
+    "buSuffix": "BU",
+    "gramsSuffix": "g.",
+    "grams": "grams", 
+    "or": "or",
+    "howMuchCarbsPerHundered": "How many <b>Carbohydrates are in 100 grams</b> of the product?",
+    "howMuchGramsFood": "How much <b>Grams</b> you want your food to be?",
+    "howMuchCarbsFood": "How much <b>Carbohydrates</b> you want your food to be?",
+    "howManyBU": "How many <b>Bread Units</b> you want your food to be?",
+    "perBUequalsGrams": "This much BU is equal to this much grams of the product you entered",
+    "perCarbsEqualsGrams": "This much Carbohydrates is equal to this much grams of the product you entered",
+    "gramsFromProductNeededForBU": "This much grams from product are needed for the BU you entered",
+    "gramsFromProductNeededForCarbs": "This much grams from product are needed for the Carbohydrates you entered"
+
+}

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 // import logo.png from assets
 const logo = require("../assets/logo.png");
+const bg = require("../assets/bg.png");
+const en = require("../assets/en.png");
 
 const HeaderContainer = styled.div`
     position: fixed;
@@ -68,7 +71,6 @@ const NavLink = styled.p`
     top: 50%;
     margin-top: 2vmin;
 
-
     & a {
         text-decoration: none;
         color: white;
@@ -90,8 +92,64 @@ const NavLink = styled.p`
     }
 `;
 
+const LanguageSelector = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 0.5vmax;
+    margin-right: 3vw;
+    background-color: #495057;
+    border-radius: 24px;
+    border: 1px solid #6C757D;
+    color: #F8F9FA;
+    cursor: pointer;
+    
+    img {
+        height: 2vmin;
+        width: 3vmin;
+        margin-right: 1vmin;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 12px;
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 10px black;
+    }
+
+    @media screen {
+        @media (max-width: 768px) {
+            position: absolute;
+            right: 7%;
+            top: calc(50% - 1vmax + 1px);
+            min-height: 4vmax;
+            min-width: 4vmax;
+            margin: 0;
+
+            img {
+                height: 3vmin;
+                width: 4vmin;
+                margin-right: 0;
+            }
+
+            p {
+                display: none;
+            }
+        }
+    }
+`;
+
 export default function Header() {
     const navigate = useNavigate();
+    const { i18n, t } = useTranslation();
+
+    const [isLanguageEnglish, setIsLanguageEnglish] = React.useState(i18n.language === "en" ? true : false);
+
+    useEffect(() => {
+        i18n.changeLanguage(isLanguageEnglish ? "en" : "bg");
+        localStorage.setItem("language", isLanguageEnglish ? "en" : "bg");
+    }, [isLanguageEnglish]);
 
     return (
         <div>
@@ -107,7 +165,7 @@ export default function Header() {
                     }}
                 >
                     <Logo src={logo} alt="Logo" />
-                    <SiteName>ХЕ Калкулатор</SiteName>
+                    <SiteName>{t('shortTitle')}</SiteName>
                 </div>
                 <NavLink>
                     <a
@@ -118,6 +176,13 @@ export default function Header() {
                         GitHub
                     </a>
                 </NavLink>
+
+                <LanguageSelector onClick={() => setIsLanguageEnglish(
+                    (prevState) => !prevState
+                )}>
+                    <img src={isLanguageEnglish ? en : bg} alt={isLanguageEnglish ? "English" : "Български"} />
+                    <p> {isLanguageEnglish ? "English" : "Български"}</p>
+                </LanguageSelector>
             </HeaderContainer>
         </div>
     );

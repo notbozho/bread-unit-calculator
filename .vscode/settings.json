@@ -1,0 +1,7 @@
+{
+    "i18n-ally.localesPaths": [
+        "E:/Development/JavaScript/bread-unit-calculator/src/assets",
+        "src/assets/locales"
+    ],
+    "i18n-ally.keystyle": "flat"
+}

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
 const FooterContainer = styled.div`
@@ -5,7 +6,7 @@ const FooterContainer = styled.div`
     display: flex;
     justify-content: center;
     text-align: center;
-    bottom: 0;
+    bottom: 1%;
     left: 1%;
     
     h1 {
@@ -33,11 +34,13 @@ const FooterContainer = styled.div`
 `;
 
 const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <FooterContainer>
             <h1>
+                {t('footer')}
                 {" "}
-                Made with 💖 by{" "}
                 <a href="https://github.com/notbozho">@notbozho</a>
             </h1>
         </FooterContainer>

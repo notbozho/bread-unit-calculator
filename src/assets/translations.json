@@ -1,0 +1,21 @@
+{
+    "en": {
+        "translation": {
+            "headerTitle": "Bread Unit Calculator",
+            "selectCalculator": "Select Calculator",
+            "warning": "Warning",
+            "warningText": "Keep in mind that this calculator is not intended to be used for any medical purposes.",
+            "warningSecondText": "Please check values that you enter in the calculator to make sure they are correct."
+        }
+    },
+    "bg": {
+        "translation": {
+            "headerTitle": "Калкулатор за Хлебни Единици",
+            "selectCalculator": "Изберете Калкулатор",
+            "warning": "Забележка",
+            "warningText": "Имайте предвид, че този калкулатор не е предназначен да се използва за медицински цели.",
+            "warningSecondText": "Моля проверявайте стойности, които въвеждате в калкулатора, за да се уверите, че са точни."
+
+        }
+    }
+}

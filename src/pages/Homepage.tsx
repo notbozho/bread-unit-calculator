@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Translation, useTranslation } from "react-i18next";
 import { redirect, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Dropdown from "../components/Dropdown";
@@ -20,7 +21,7 @@ const Header = styled.h1`
     text-align: center;
     color: #ced4da;
     max-width: 90%;
-    
+
     @media screen {
         @media (max-width: 768px) {
             margin-top: -50px;
@@ -36,7 +37,7 @@ const DisclaimerContainer = styled.div`
     text-align: center;
     max-width: 50%;
     margin-top: 5vh;
-    background-color: #2E3338;
+    background-color: #2e3338;
     color: #ced4da;
     opacity: 0.6;
     overflow: hidden;
@@ -88,39 +89,44 @@ const DisclaimerOverlay = styled.img`
 
 export default function Homepage() {
     const navigate = useNavigate();
+    const { t } = useTranslation();
 
     const items = [
         {
-            item: "Колко грама от продукта са ви нужни, според това колко Хлебни Единици искате.",
+            item: t('dropdownItem1'),
             onClick: () => {
-                navigate("/grams-by-bu")
-            }
+                navigate("/grams-by-bu");
+            },
         },
         {
-            item: "Колко Хлебни Единици и Въглехидрати са равни на Грамаж от продукта.",
+            item: t('dropdownItem2'),
             onClick: () => {
-                navigate("/carbs-and-bu-by-grams")
-            }
+                navigate("/carbs-and-bu-by-grams");
+            },
         },
         {
-            item: "Колко грама от продукта са ви нужни, според това колко Въглехидрати искате.",
+            item: t('dropdownItem3'),
             onClick: () => {
-                navigate("/grams-by-carbs")
-            }
-        }
+                navigate("/grams-by-carbs");
+            },
+        },
     ];
 
     return (
         <>
             <Container>
-                <Header>Калкулатор за Хлебни Единици</Header>
+                <Header>{t("title")}</Header>
                 <Dropdown items={items} />
                 <DisclaimerContainer>
                     <DisclaimerOverlay src={warning} />
-                    <h1>Забележка</h1>
-                    <p>Имайте предвид, че този калкулатор не е предназначен да се използва за медицински цели.</p>
-                        
-                    <p>Моля проверявайте стойности, които въвеждате в калкулатора, за да се уверите, че са точни.</p>
+                    <h1>{t('warning')}</h1>
+                    <p>
+                        {t('warningText')}
+                    </p>
+
+                    <p>
+                        {t('warningSecondText')}
+                    </p>
                 </DisclaimerContainer>
             </Container>
         </>

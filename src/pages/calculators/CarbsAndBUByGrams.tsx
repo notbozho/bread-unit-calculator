@@ -1,4 +1,6 @@
+import { t } from "i18next";
 import { useState } from "react";
+import { Trans } from "react-i18next";
 import TextBox from "../../components/TextBox";
 import {
     calculateBreadUnitsPerGrams,
@@ -18,14 +20,16 @@ export default function CarbsAndBUByGrams(): JSX.Element {
         >
             <LeftContainer>
                 <InputTitle>
-                    Колко грама <b>Въглехидрати на 100 гр.</b> от продукта?
+                    <Trans i18nKey="howMuchCarbsPerHundered" components={{ b: <b /> }}>
+                        Колко грама <b>Въглехидрати на 100 гр.</b> от продукта?
+                    </Trans>
                 </InputTitle>
 
                 <TextBox
                     key={"carbsper100"}
-                    suffix={" гр."}
+                    suffix={" " + t('gramsSuffix')}
                     handleChange={(v: any) => {
-                        const value = v.target.value.replace(" гр.", "");
+                        const value = v.target.value.replace(" " + t('gramsSuffix'), "");
 
                         if (isNaN(value) || value === "") {
                             setGramsPerHundred(0);
@@ -37,14 +41,17 @@ export default function CarbsAndBUByGrams(): JSX.Element {
                     value={gramsPerHundred}
                 />
                 <InputTitle>
-                    Колко <b>Грама</b> искате да е храна ви?
+                    <Trans i18nKey="howMuchGramsFood" components={{ b: <b /> }}>
+
+                        Колко <b>Грама</b> искате да е храна ви?
+                    </Trans>
                 </InputTitle>
 
                 <TextBox
                     key={"grams"}
-                    suffix={" гр."}
+                    suffix={" " + t('gramsSuffix')}
                     handleChange={(v: any) => {
-                        const value = v.target.value.replace(" гр.", "");
+                        const value = v.target.value.replace(" " + t('gramsSuffix'), "");
 
                         if (isNaN(value) || value === "") {
                             setDesiredGrams(0);
@@ -63,27 +70,25 @@ export default function CarbsAndBUByGrams(): JSX.Element {
                             desiredGrams,
                             gramsPerHundred
                         )}{" "}
-                        ХЕ
+                        {t('buSuffix')}
                     </h1>
 
                     <p>
-                        На толкова ХЕ се равняват грамовете от продукта въведени
-                        от вас
+                        {t('perBUequalsGrams')}
                     </p>
 
                     <p style={{
                         marginTop: "2vh",
                         opacity: 0.7
-                    }}> или </p>
+                    }}> {t('or')} </p>
 
                     <h1>
                         {calculateCarbsForGrams(desiredGrams, gramsPerHundred)}{" "}
-                        грама
+                        {t('grams')}
                     </h1>
 
                     <p>
-                        На толкова Въглехидрати се равняват грамовете от
-                        продукта въведени от вас
+                        {t('perCarbsEqualsGrams')}
                     </p>
                 </ResultContainer>
             </RightContainer>

@@ -38,7 +38,7 @@ This project is not intended and **SHOULD NOT** to be used as a medical device. 
 - [x] ~~Add a disclaimer that this shouldn't be trusted for medical purposes~~
 - [x] ~~Add a footer~~
 - [x] ~~Go back button in calculators (logo)~~
-- [ ] Localization (English & Bulgarian)
+- [x] ~~Localization (English & Bulgarian)~~
 - [x] ~~Responsive design~~
 
 ---
