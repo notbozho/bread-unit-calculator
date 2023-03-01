@@ -17,7 +17,7 @@ export const RightContainer = styled.div`
         @media (max-width: 768px) {
             position: absolute;
             border-radius: 36px 36px 0 0;
-            min-height: 37vh;
+            min-height: 34vh;
             min-width: 100%;
             bottom: 0px;
         }
@@ -47,13 +47,13 @@ export const InputTitle = styled.p`
     text-align: center;
     font-weight: 300;
     margin-bottom: 20px;
-    margin-top: 1vh;
+    margin-top: 0.2vh;
     max-width: 90%;
     color: #ced4da;
 
     @media screen {
         @media (max-width: 768px) {
-            font-size: 2vmax;
+            font-size: 1.7vmax;
         }
     }
         

@@ -36,11 +36,13 @@ const TextBoxStyled = styled.input`
         @media (max-width: 960px) {
             width: 60%;
             height: 80px;
+            font-size: 32px;
         }
 
         @media (max-width: 768px) {
             width: 70%;
-            height: 60px;
+            height: 5vmax;
+            font-size: 28px;
         }
     }
 `;

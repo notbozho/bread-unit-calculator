@@ -40,6 +40,8 @@ const DisclaimerContainer = styled.div`
     color: #ced4da;
     opacity: 0.6;
     overflow: hidden;
+    z-index: -1;
+    border-radius: 16px;
 
     h1 {
         font-size: 2.5vmax;
