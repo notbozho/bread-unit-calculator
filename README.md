@@ -36,10 +36,10 @@ This project is not intended and **SHOULD NOT** to be used as a medical device. 
 - [x] ~~Routing~~
 - [ ] Add a disclaimer that this shouldn't be trusted for medical purposes
 - [ ] Add a footer
-- [ ] Go back button in calculators
+- [x] ~~Go back button in calculators (logo)~~
 - [ ] Localization (English & Bulgarian)
 - [ ] Make calculator component 1 instead of 3 and more flexible 
-- [ ] Responsive design
+- [x] ~~Responsive design~~
 
 ---
 

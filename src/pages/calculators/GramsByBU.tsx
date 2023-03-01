@@ -15,17 +15,14 @@ const RightContainer = styled.div`
     min-height: 100vh;
     border-radius: 36px 0 0 36px;
     box-shadow: 0px 0px 21px rgba(199, 199, 199, 0.5);
-`;
 
-const TextContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    p {
-        max-width: 80%;
-        color: #4a5159;
-        margin-bottom: 32px;
+    @media screen {
+        @media (max-width: 768px) {
+            position: absolute;
+            border-radius: 36px 36px 0 0;
+            min-height: 40vh;
+            bottom: 0px;
+        }
     }
 `;
 
@@ -36,14 +33,62 @@ const LeftContainer = styled.div`
     align-items: center;
     vertical-align: middle;
     flex-direction: column;
+
+    @media screen {
+        @media (max-width: 768px) {
+            margin-top: 5vh;
+            min-height: 60vh;
+            min-width: 100%;
+            top: 0px;
+        }
+    }
 `;
 
 const InputTitle = styled.p`
-    font-size: 24px;
+    font-size: 2vmax;
+    text-align: center;
     font-weight: 300;
     margin-bottom: 20px;
-    margin-top: 32px;
+    margin-top: 1vh;
+    max-width: 90%;
     color: #ced4da;
+
+    @media screen {
+        @media (max-width: 768px) {
+            font-size: 3vmax;
+        }
+    }
+        
+`;
+
+const ResultContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h1 {
+        font-size: 5vmax;
+        font-weight: 900;
+    }
+
+    p {
+        max-width: 85%;
+        font-size: 1.5vmax;
+        font-weight: 300;
+    }
+
+    @media screen {
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 6vmax;
+            }
+
+            p {
+                font-size: 2.2vmax;
+            }
+        }
+    }
 `;
 
 export default function GramsByBU(): JSX.Element {
@@ -97,13 +142,8 @@ export default function GramsByBU(): JSX.Element {
                 />
             </LeftContainer>
             <RightContainer>
-                <TextContainer>
-                    <h1
-                        style={{
-                            fontWeight: "900",
-                            fontSize: "4rem",
-                        }}
-                    >
+                <ResultContainer>
+                    <h1>
                         {calculateCarbsForBreadUnits(
                             desiredBreadUnits,
                             gramsPerHundred
@@ -111,16 +151,11 @@ export default function GramsByBU(): JSX.Element {
                         грама
                     </h1>
 
-                    <p
-                        style={{
-                            fontSize: "1.5rem",
-                            fontWeight: "500",
-                        }}
-                    >
+                    <p>
                         Толкова грама от продукта са ви нужни за ХЕ въведени от
                         вас
                     </p>
-                </TextContainer>
+                </ResultContainer>
             </RightContainer>
         </div>
     );

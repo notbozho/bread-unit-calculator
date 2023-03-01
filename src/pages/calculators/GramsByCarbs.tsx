@@ -1,10 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import TextBox from "../../components/TextBox";
-import {
-    calculateCarbsForBreadUnits,
-    calculateCarbsPerGrams,
-} from "../../helpers";
+import { calculateCarbsPerGrams } from "../../helpers";
 
 const RightContainer = styled.div`
     flex: 1 1 0;
@@ -18,17 +15,14 @@ const RightContainer = styled.div`
     min-height: 100vh;
     border-radius: 36px 0 0 36px;
     box-shadow: 0px 0px 21px rgba(199, 199, 199, 0.5);
-`;
 
-const TextContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    p {
-        max-width: 80%;
-        color: #4a5159;
-        margin-bottom: 32px;
+    @media screen {
+        @media (max-width: 768px) {
+            position: absolute;
+            border-radius: 36px 36px 0 0;
+            min-height: 40vh;
+            bottom: 0px;
+        }
     }
 `;
 
@@ -39,14 +33,60 @@ const LeftContainer = styled.div`
     align-items: center;
     vertical-align: middle;
     flex-direction: column;
+
+    @media screen {
+        @media (max-width: 768px) {
+            margin-top: 4vh;
+            min-height: 60vh;
+            min-width: 100%;
+            top: 0px;
+        }
+    }
 `;
 
 const InputTitle = styled.p`
-    font-size: 24px;
+    font-size: 2vmax;
+    text-align: center;
     font-weight: 300;
     margin-bottom: 20px;
     margin-top: 32px;
+    max-width: 90%;
     color: #ced4da;
+
+    @media screen {
+        @media (max-width: 768px) {
+            font-size: 3vmax;
+        }
+    }
+`;
+
+const ResultContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 5vmax;
+        font-weight: 900;
+    }
+
+    p {
+        font-size: 1.5vmax;
+        font-weight: 300;
+        color: #4a5159;
+    }
+
+    @media screen {
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 6vmax;
+            }
+
+            p {
+                font-size: 2.2vmax;
+            }
+        }
+    }
 `;
 
 export default function GramsByCarbs(): JSX.Element {
@@ -100,27 +140,20 @@ export default function GramsByCarbs(): JSX.Element {
                 />
             </LeftContainer>
             <RightContainer>
-                <TextContainer>
-                    <h1
-                        style={{
-                            fontWeight: "900",
-                            fontSize: "4rem",
-                        }}
-                    >
-                        {calculateCarbsPerGrams(desiredCarbs, gramsPerHundred)}{" "}
-                        грама
-                    </h1>
+                    <ResultContainer>
+                        <h1>
+                            {calculateCarbsPerGrams(
+                                desiredCarbs,
+                                gramsPerHundred
+                            )}{" "}
+                            грама
+                        </h1>
 
-                    <p
-                        style={{
-                            fontSize: "1.5rem",
-                            fontWeight: "500",
-                        }}
-                    >
-                        Толкова грама от продукта са ви нужни за Въглехидратите
-                        въведени от вас
-                    </p>
-                </TextContainer>
+                        <p>
+                            Толкова грама от продукта са ви нужни за
+                            Въглехидратите въведени от вас
+                        </p>
+                    </ResultContainer>
             </RightContainer>
         </div>
     );

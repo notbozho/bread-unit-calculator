@@ -47,6 +47,17 @@ const DropdownHeader = styled.div<{ isOpen: boolean }>`
         border: 3px solid #ced4da;
         border-radius: 24px 24px 0 0;
     `}
+
+    @media screen {
+        @media (max-width: 1300px) {
+            width: 55vw;
+        }
+
+        @media (max-width: 960px) {
+            width: 50vw;
+            font-size: 1.7vmax;
+        }   
+    }
 `;
 
 const DropdownArrow = styled.div<{ isOpen: boolean }>`
@@ -83,8 +94,22 @@ const DropdownMenu = styled.div`
     background-color: #121517;
     border: 3px solid #A4ADB6;
     border-top: none;
-    /* border-radius: 0 0 24px 24px; */
-    transition: 0.2s ease-in-out;
+    font-size: 1.5vmin;
+
+    @media screen {
+        @media (max-width: 1300px) {
+            width: 55vw;
+            font-size: 1.4vmax;
+        }
+
+        @media (max-width: 960px) {
+            width: 50vw
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1.5vmax;
+        }
+    }
 `;
 
 const DropdownItem = styled.div`

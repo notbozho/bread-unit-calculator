@@ -12,12 +12,18 @@ const Container = styled.div`
     height: 100vh;
 `;
 
-const ButtonContainer = styled.div``;
-
 const Header = styled.h1`
-    font-size: 82px;
+    font-size: 5vmax;
     font-weight: bold;
+    text-align: center;
     color: #ced4da;
+    max-width: 90%;
+    
+    @media screen {
+        @media (max-width: 768px) {
+            margin-top: -50px;
+        }
+    }
 `;
 
 export default function Homepage() {

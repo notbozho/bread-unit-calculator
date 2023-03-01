@@ -31,6 +31,18 @@ const TextBoxStyled = styled.input`
     &::placeholder {
         color: #a4adb6;
     }
+
+    @media screen {
+        @media (max-width: 960px) {
+            width: 60%;
+            height: 80px;
+        }
+
+        @media (max-width: 768px) {
+            width: 70%;
+            height: 70px;
+        }
+    }
 `;
 
 export default TextBoxStyled;
