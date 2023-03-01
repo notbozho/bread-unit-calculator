@@ -30,6 +30,12 @@ This project is not intended and **SHOULD NOT** to be used as a medical device. 
 
 ---
 
+###  Time
+
+I use WakaTime to track time on code projects. According to the report I spent 27 hrs 3 mins on this project.
+
+---
+
 ### Todo:
 
 - [x] ~~Add a calculator for carbohydrates~~
