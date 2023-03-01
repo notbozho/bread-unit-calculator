@@ -1,14 +1,16 @@
 # Bread Unit Calculator
 Calculator for bread units that could help people with diabetes to calculate the amount of carbohydrates in their food.
 
+_If you find any bugs or have any suggestions, please open an issue._
+
 ---
 
 ### Preview:
 
-![Homepage](https://i.imgur.com/ZZftJ83.png)
-![Calculator](https://i.imgur.com/xxZysAw.png)
-![Calculator2](https://i.imgur.com/qmd4vDP.png)
-![Mobile](https://i.imgur.com/bjG3PuL.png)
+![Homepage](https://i.imgur.com/DJj7LJN.png)
+![Calculator](https://i.imgur.com/JqJmYHq.png)
+![Calculator2](https://i.imgur.com/XzvDCXX.png)
+![Mobile](https://i.imgur.com/tf0mnpI.png)
 ---
 
 ## Disclaimer !
