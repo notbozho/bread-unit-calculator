@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Translation, useTranslation } from "react-i18next";
-import { redirect, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Dropdown from "../components/Dropdown";
 

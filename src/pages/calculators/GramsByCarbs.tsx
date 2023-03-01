@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
-import styled from "styled-components";
 import TextBox from "../../components/TextBox";
 import { calculateCarbsPerGrams } from "../../helpers";
 import {

@@ -149,7 +149,7 @@ export default function Header() {
     useEffect(() => {
         i18n.changeLanguage(isLanguageEnglish ? "en" : "bg");
         localStorage.setItem("language", isLanguageEnglish ? "en" : "bg");
-    }, [isLanguageEnglish]);
+    }, [i18n, isLanguageEnglish]);
 
     return (
         <div>
